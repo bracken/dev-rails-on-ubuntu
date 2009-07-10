@@ -1,0 +1,36 @@
+This project is meant to help set up a fresh Ubuntu ennvironment for rails development.
+Everytime I have to set up a new machine I can never remember exactly which packages
+and gems to install. So I wrote this for myself, but I thought others might find it
+useful as well.
+
+If you find errors or  have specific improvements just add an issue on github.
+
+The current usage is like this:
+dev-rails-on-ubuntu [-rdoc-ri] [-no-mysql] [-h,--help]
+
+-h,--help	Show this help
+-rdoc-ri	By default gems are installed without documentation ("--no-rdoc --no-ri"), this option enables documentation
+-no-mysql	This flag disables the MySql install
+
+The following Ubuntu packages are installed:
+Base files:
+	build-essential ruby ruby-dev ri rdoc openssl libssl-dev libopenssl-ruby irb
+Git:
+	git git-core git-completion gitk
+MySql:
+	mysql-server mysql-client libmysql-ruby libmysql-ruby1.8 libmysqlclient15-dev
+Sqlite:
+	sqlite3 libsqlite3-dev libsqlite3-ruby
+
+These gems are installed:
+rails
+mysql
+sqlite3-ruby
+rspec 
+rspec-rails
+cucumber
+capistrano
+wirble
+
+An .irbrc that adds irb auto-completion and syntax highlighting is added as well. (if one doesn't already exist)
+

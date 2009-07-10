@@ -13,7 +13,11 @@ for var in "$@"
 do
   if [ "$var" = "-h" -o "$var" = "--help" ]; then
     echo "Usage:"
-    echo "rails-on-ubuntu [-rdoc-ri] [-no-mysql] [-h,--help]"
+    echo "dev-rails-on-ubuntu [-rdoc-ri] [-no-mysql] [-h,--help]"
+    echo "-h,--help	Show this help"
+	echo "-rdoc-ri	By default gems are installed without documentation ('--no-rdoc --no-ri'),"
+	echo "		this option enables documentation"
+	echo "-no-mysql	This flag disables the MySql install"
     exit 1
   fi
   if [ "$var" = "-rdoc-ri" ]; then
