@@ -3,7 +3,11 @@ Everytime I have to set up a new machine I can never remember exactly which pack
 and gems to install. So I wrote this for myself, but I thought others might find it
 useful as well.
 
-If you find errors or  have specific improvements just add an issue on github.
+If you find errors or have specific improvements just add an issue on github. You'll
+notice that there are only command line flags for a couple things. That's because I
+haven't invested much time into making this a great general script for everyone. I
+plan on making the script a little more flexible.
+
 
 The current usage is like this:
 dev-rails-on-ubuntu [-rdoc-ri] [-no-mysql] [-h,--help]
@@ -11,6 +15,17 @@ dev-rails-on-ubuntu [-rdoc-ri] [-no-mysql] [-h,--help]
 -h,--help	Show this help
 -rdoc-ri	By default gems are installed without documentation ("--no-rdoc --no-ri"), this option enables documentation
 -no-mysql	This flag disables the MySql install
+
+
+Step by step how to use these scripts:
+-Click the "Download" link at the top of the github page and download a .tar
+-Open a terminal and go to the directory of the downloaded .tar
+-Extract the .tar.gz file, enter directory, and run shell script
+tar -zxvf bracken-dev-rails-on-ubuntu-*HASH*.tar.gz
+cd bracken-dev-rails-on-ubuntu-*HASH*
+./dev-rails-on-ubuntu.sh
+-Complete the prompts as they appear
+
 
 The following Ubuntu packages are installed:
 Base files:
