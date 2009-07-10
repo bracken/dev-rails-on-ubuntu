@@ -1,4 +1,7 @@
-This project is meant to help set up a fresh Ubuntu ennvironment for rails development.
+This project is meant to help set up a fresh Ubuntu ennvironment for rails _development_.
+There are some other rails on ubuntu repos, but they are targeted more as server setups,
+this is targeted at development.
+
 Everytime I have to set up a new machine I can never remember exactly which packages
 and gems to install. So I wrote this for myself, but I thought others might find it
 useful as well.
