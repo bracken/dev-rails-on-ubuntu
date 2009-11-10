@@ -1,7 +1,8 @@
 #!/bin/bash
 #These values will need to be updated for the latest version of ruby gems
-tar_url=http://rubyforge.org/frs/download.php/57643/rubygems-1.3.4.tgz
-current_version=rubygems-1.3.4
+#Latest from http://rubyforge.org/frs/?group_id=126
+tar_url=http://rubyforge.org/frs/download.php/60718/rubygems-1.3.5.tgz
+current_version=rubygems-1.3.5
 tar_file=$current_version.tgz
 
 echo "**Installing Ruby Gems"
