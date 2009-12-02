@@ -2,7 +2,7 @@
 
 echo "**Installing Irb"
 
-sudo apt-get install irb
+sudo apt-get install irb --assume-yes
 
 #copy config file if it doesn't exist
 # irbrc file from Duane Johnson: http://blog.inquirylabs.com/2007/08/29/enhancing-the-irb-experience/
